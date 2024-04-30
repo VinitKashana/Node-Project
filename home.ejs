@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .hello {
+            color: white;
+        }
+        .btn-des {
+            border-radius: 15px;
+            background-color: rgb(63, 62, 62);
+            color: white;
+            font-size: 17px;
+            text-decoration: none;
+            min-width: 100px;
+            height: 40px;
+        }
+        .CircularProgressbar {
+            width: 80px;
+            height: 40px;
+            margin: 0 auto;
+
+        }
+
+        .CircularProgressbar .CircularProgressbar-path {
+            stroke: rgb(61,198,193);
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.5s ease 0s;
+        }
+
+        .CircularProgressbar .CircularProgressbar-trail {
+            stroke: #d6d6d6;
+            stroke-linecap: round;
+        }
+
+        .CircularProgressbar .CircularProgressbar-text {
+            fill: rgb(61,198,193);
+            font-size: 20px;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+
+        .fs{
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            
+        }
+        .telediv{
+            background-color: rgb(61,198,193);
+            border-radius: 15px;
+            width: 300px;
+            height: 50px;
+        }
+        .form-check-input {
+            width:120 px;
+            height: 50px;
+        }
+        .text {
+            color: grey;
+        }
+        .percen{
+            color: rgb(61,198,193);
+            padding-left: 200px;
+            
+            
+        }
+        .fontsize{
+            font-size: 50px;
+            color: rgb(61,198,193);
+            font-weight: bold;
+            
+        }
+        .data{
+            font-size: 30px;
+            
+        }
+        .container-fluid {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .data1{
+            font-size: small;
+            padding-left: 10px;
+            
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px; 
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid black; 
+   
+}
+
+th {
+    background-color: #282828; 
+    color: grey;
+}
+
+td {
+    color: white; 
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="margin-top: 50px;">
+        <div class="row align-items-center">
+            <div class=" col-sm-12 col-md-6 col-lg-3 mb-3 ps-5 mb-md-0">
+                <p class="fontsize">HODLINFO</p>
+            </div>
+            <div class="col-md-6 col-lg-6 text-center">
+                <div class="btn-group me-2">
+                    <button class="btn btn-des dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">INR</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">INR</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group me-2">
+                    <button class="btn btn-des dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false"  type="button">BTC</button>
+                    <ul class="dropdown-menu">
+                        <li><a value="BTC" tabindex="0" role="menuitem" class="dropdown-item" href="/BTC-INR">BTC</a></li>
+                        <li><a value="ETH" tabindex="0" role="menuitem" class="dropdown-item" href="/ETH-INR">ETH</a></li>
+                        <li><a value="XRP" tabindex="0" role="menuitem" class="dropdown-item" href="/XRP-INR">XRP</a></li>
+                         <li><a value="TRX" tabindex="0" role="menuitem" class="dropdown-item" href="/TRX-INR">TRX</a></li>
+                        <li><a value="DASH" tabindex="0" role="menuitem" class="dropdown-item" href="/DASH-INR">DASH</a></li>
+                         <li><a value="ZEC" tabindex="0" role="menuitem" class="dropdown-item" href="/ZEC-INR">ZEC</a></li>
+                        <li><a value="XEM" tabindex="0" role="menuitem" class="dropdown-item" href="/XEM-INR">XEM</a></li>
+                         <li><a value="IOST" tabindex="0" role="menuitem" class="dropdown-item" href="/IOST-INR">IOST</a></li>
+                         <li><a value="WIN" tabindex="0" role="menuitem" class="dropdown-item" href="/WIN-INR">WIN</a></li>
+                         <li><a value="BTT" tabindex="0" role="menuitem" class="dropdown-item" href="/BTT-INR">BTT</a></li>
+                         <li><a value="WRX" tabindex="0" role="menuitem" class="dropdown-item" href="/WRX-INR">WRX</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-des" aria-expanded="false"  type="button"><a class="btn-des" target="_blank" href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn">BUY BTC</a></button>
+            </div>
+            <div class="col-md-12 col-lg-3 d-flex justify-content-end ">
+                <div class="CircularProgressbar me-2">
+                    <svg viewBox="0 0 100 100">
+                        
+                        <path
+                            class="CircularProgressbar-trail"
+                            d="M 50,50 m -45,0 a 45,45 0 1 1 90,0 a 45,45 0 1 1 -90,0"
+                            stroke-width="10"
+                        />
+                    
+                        <path
+                            class="CircularProgressbar-path"
+                            d="M 50,50 m -45,0 a 45,45 0 1 1 90,0 a 45,45 0 1 1 -90,0"
+                            stroke-width="10"
+                            fill-opacity="0"
+                            style="stroke-dasharray: 0 283; stroke-dashoffset: 0"
+                        />
+                      
+                        <text x="50" y="50" class="CircularProgressbar-text">00:00</text>
+                    </svg>
+                </div>
+                <div class="pb-1 me-3 telediv d-flex align-items-center justify-content-center">
+                    <a class="fs" href="https://hodlinfo.com/connect/telegram" class="btn-des" id="telegramBtn">Connect to Telegram</a>
+                </div>
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" id="themeToggle">
+                    <label class="form-check-label" for="themeToggle"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fs-4 text-center fs text pt-3">Best Price to Trade</div>
+
+    <div class="container-fluid mt-3 fs-4 ps-5 percen">
+        <div class="row">
+            <div class="col">
+                <p class="data ">1.0%</p>
+                <p class="text data1">5 Mins</p>
+            </div>
+            <div class="col">
+                <p class="data">3.0%</p>
+                <p class="text data1">1 Hour</p>
+            </div>
+            <div class="col mt-4 ">
+              <p class="data text "> ₹45,28,795</p>
+            </div>
+            <div class="col">
+                <p class="data">4.0%</p>
+                <p class="text data1">1 Day</p>
+            </div>
+            <div class="col">
+                <p class="data">8.3%</p>
+                <p class="text data1">7 Days</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center fs-5 text">Average BTC/INR net price including commission</div>
+
+    <table>
+      <thead>
+          <tr >
+              <th>#</th>
+              <th>Name</th>
+              <th>Last Trade Price</th>
+              <th>Buy/Sell</th>
+              <th>Differene</th>
+              <th>Base Unit</th>
+              <th>Volume</th>
+            
+          </tr>
+      </thead>
+      <tbody><% data.forEach((ticker, index) => { %>
+          <tr >
+              <td><%= index + 1 %></td>
+              <td><%= ticker.name %></td>
+              <td><%= ticker.sell %></td>
+              <td><%= ticker.buy %>/<%= ticker.sell %></td>
+              <% 
+                  
+                  const percentageDifference = ((ticker.buy - ticker.sell) / ticker.sell) * 100;
+              
+                  const roundedPercentageDifference = percentageDifference.toFixed(3);
+      
+                  // Apply different styles based on the sign of the percentage difference
+                  const color = percentageDifference > 0 ? 'green' : 'red';
+              %>
+              <td style="color:red" <%= color %>"><%= roundedPercentageDifference %></td>
+
+              <td><%= ticker.base_unit %></td>
+              <td><%= ticker.volume %></td>
+
+          </tr>
+      <% }); %>
+      
+      </tbody>
+  </table>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+        // Telegram button click event
+        document.getElementById('telegramBtn').addEventListener('click', function() {
+            // Replace the URL with the actual Telegram channel URL
+            window.open('https://t.me/yourchannel', '_blank');
+        });
+
+        // Theme toggle
+        document.getElementById('themeToggle').addEventListener('change', function() {
+            if (this.checked) {
+                // Dark mode
+                document.body.classList.add('bg-dark');
+                document.body.classList.add('text-white');
+            } else {
+                // Light mode
+                document.body.classList.remove('bg-dark');
+                document.body.classList.remove('text-white');
+            }
+        });
+
+        // Timer
+        function updateTimer() {
+            var now = new Date();
+            var seconds = now.getSeconds();
+            var progress = seconds / 60; 
+
+            document.querySelector('.CircularProgressbar-path').style.strokeDasharray = (283 * progress) + ' 283';
+            document.querySelector('.CircularProgressbar-path').style.strokeDashoffset = (283 - (283 * progress));
+            document.querySelector('.CircularProgressbar-text').textContent = seconds;
+        }
+
+        
+        setInterval(updateTimer, 1000);
+
+        
+        updateTimer();
+    </script>
+</body>
+</html>
